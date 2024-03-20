@@ -48,6 +48,8 @@ public class APITest {
         payloadData.put("referrerId", 0);
         payloadData.put("campaignSource", 0);
         payloadData.put("isDeferredUser", false);
+        payloadData.put("campaignSource", 0);
+        payloadData.put("isDeferredUser", false);
 
         // Make API call
         given()
