@@ -57,6 +57,7 @@ public class Democlass {
 
 		       System.out.println("Created user ID: " + id);
 		   
+
 		   
 		       @Test(priority = 5)
 			   void createUser() {
@@ -75,7 +76,7 @@ public class Democlass {
 			           .extract().jsonPath().getInt("id");
 
 			       System.out.println("Created user ID: " + id);
-		   
+
 	}}
 
 }
