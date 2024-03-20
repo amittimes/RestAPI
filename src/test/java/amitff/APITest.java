@@ -51,9 +51,6 @@ public class APITest {
         payloadData.put("campaignSource", 0);
         payloadData.put("isDeferredUser", false);
 
-        
-        payloadData.put("campaignSource", 0);
-        payloadData.put("isDeferredUser", false);
         // Make API call
         given()
             .contentType(ContentType.JSON)
