@@ -56,7 +56,24 @@ public class Democlass {
 		           .extract().jsonPath().getInt("id");
 
 		       System.out.println("Created user ID: " + id);
-		   
+		       @Test(priority = 4)
+			   void createUser() {
+			       HashMap<String, Object> data = new HashMap<>();
+			       data.put("name", "Amit");
+			       data.put("job", "Software Engineer");
+			       data.put("job", "Software Engineer");
+
+			       int id = given()
+			           .contentType("application/json")
+			           .body(data)
+			       .when()
+			           .post("https://reqres.in/api/users")
+			           .then()
+			           .statusCode(201) // Assuming a successful creation returns 201 status code
+			           .extract().jsonPath().getInt("id");
+
+			       System.out.println("Created user ID: " + id);
+			   
 		   
 		   
 		   
